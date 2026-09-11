@@ -2,6 +2,12 @@
 
 All notable changes to mod_completionlink will be documented in this file.
 
+## [1.1.2] - 2026-09-11
+
+### Changed
+- README: installation now points to release tags (there are no GitHub Releases), the student experience section
+  describes what students who can't open the linked course see, and Moodle Workplace support is stated accurately.
+
 ## [1.1.1] - 2026-09-11
 
 ### Fixed
