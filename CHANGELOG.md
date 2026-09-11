@@ -2,7 +2,7 @@
 
 All notable changes to mod_completionlink will be documented in this file.
 
-## [Unreleased]
+## [1.1.1] - 2026-09-11
 
 ### Fixed
 - The "not enrolled" page no longer shows the activity name twice.
