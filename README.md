@@ -3,7 +3,7 @@
 A Moodle activity module that embeds a direct link to another course and automatically tracks whether the student has completed it. Completion of the linked course drives activity completion on the host course, enabling downstream restriction rules and learning-path gating without any manual grading or custom reports.
 
 **Author:** David Rohr — [tidewatercreative.com](https://tidewatercreative.com)
-**Requires:** Moodle 4.5–5.2 (also used on Moodle Workplace 5.0)
+**Requires:** Moodle 4.5–5.2
 **Maturity:** Stable
 **License:** GNU GPL v3 or later
 
@@ -19,7 +19,7 @@ The course selector searches on demand via AJAX as the teacher types, so it scal
 
 ### Student experience
 
-The activity name on the course page is a direct link that opens the target course in a new tab — no intermediate view page. If the teacher enabled "Display description on course page", the description appears inline beneath the link.
+For students who can open the target course, the activity name on the course page is a direct link that opens it in a new tab — no intermediate view page. Students who can't open it yet go to the activity page instead, which explains how to get in (see [Enrolment in the linked course](#enrolment-in-the-linked-course)). If the teacher enabled "Display description on course page", the description appears inline beneath the link.
 
 ### Enrolment in the linked course
 
@@ -68,7 +68,10 @@ Course Completion Link stores no personal data. It reads `mdl_course_completions
 
 ## Installation
 
-1. Download the latest release ZIP from Moodle Marketplace or the [GitHub releases](https://github.com/therohr/moodle-mod_completionlink/releases).
+1. Download the latest release ZIP from the Moodle Plugins directory, or build one from a
+   [release tag](https://github.com/therohr/moodle-mod_completionlink/tags), for example
+   `git archive --format=zip --prefix=completionlink/ -o mod_completionlink.zip v1.1.1`. (GitHub's own "Source code"
+   downloads use a different folder name and won't install as-is.)
 2. In Moodle, go to **Site administration → Plugins → Install plugins**.
 3. Upload the zip and follow the on-screen prompts.
 4. Complete the database upgrade (adds the `mdl_completionlink` table).
@@ -77,7 +80,10 @@ Alternatively, extract the zip so that the `completionlink` folder sits at `{moo
 
 ### Requirements
 
-- Moodle 4.5 or later (Moodle Workplace 5.0 supported and tested)
+- Moodle 4.5 to 5.2. Automated tests run on 4.5, 5.1 and 5.2; 5.0 is inside the supported range but not in the test
+  matrix.
+- Moodle Workplace: the target-course search is tenant-aware. The predecessor `mod_courselink` runs on Moodle
+  Workplace 5.0, but this plugin hasn't been tested on Workplace yet.
 - Course completion must be enabled site-wide: **Site administration → Advanced features → Enable completion tracking**
 - Completion must also be enabled on each host course that uses this activity
 
