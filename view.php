@@ -80,7 +80,6 @@ if (enrolment_access::can_access($targetcourse->id, $USER->id)) {
 $coursename = format_string($targetcourse->fullname, true, ['context' => context_course::instance($targetcourse->id)]);
 
 echo $OUTPUT->header();
-echo $OUTPUT->heading(format_string($instance->name));
 echo $OUTPUT->notification(get_string('notenrolled', 'mod_completionlink', $coursename), 'info', false);
 
 $enrolurl = enrolment_access::get_enrolment_url($targetcourse->id);

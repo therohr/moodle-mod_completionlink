@@ -2,6 +2,11 @@
 
 All notable changes to mod_completionlink will be documented in this file.
 
+## [Unreleased]
+
+### Fixed
+- The "not enrolled" page no longer shows the activity name twice.
+
 ## [1.1.0] - 2026-09-11
 
 Initial public release of Course completion link.
