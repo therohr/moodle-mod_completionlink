@@ -15,19 +15,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Plugin version definition.
+ * Upgrade steps for mod_completionlink.
  *
  * @package   mod_completionlink
  * @copyright 2026 David Rohr (tidewatercreative.com)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-// Minimum Moodle 4.5 — required for activity_custom_completion API and Workplace 5.0 compatibility.
-$plugin->component = 'mod_completionlink';
-$plugin->version   = 2026091105;
-$plugin->requires  = 2024100700; // Moodle 4.5.
-$plugin->supported = [405, 502];  // Moodle 4.5 to 5.2 (see .github/workflows/moodle-plugin-ci.yml).
-$plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.1.3';
+/**
+ * Run upgrade steps for mod_completionlink.
+ *
+ * There are no database changes since the first release. Add upgrade steps here, each guarded by
+ * `if ($oldversion < YYYYMMDDXX)` and ending with upgrade_mod_savepoint().
+ *
+ * @param int $oldversion The version the plugin is being upgraded from.
+ * @return bool Always true.
+ */
+function xmldb_completionlink_upgrade($oldversion) {
+    return true;
+}

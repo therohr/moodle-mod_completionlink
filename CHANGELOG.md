@@ -2,6 +2,14 @@
 
 All notable changes to mod_completionlink will be documented in this file.
 
+## [1.1.3] - 2026-09-11
+
+### Added
+- `db/upgrade.php` with an empty upgrade function, required by the Moodle Plugins directory. No database changes.
+
+### Changed
+- README credits now say where the plugin has been tested.
+
 ## [1.1.2] - 2026-09-11
 
 ### Changed
