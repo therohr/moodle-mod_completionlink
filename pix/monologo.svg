@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMid meet">
+  <!-- Book/course shape -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M4 4C4 3.44772 4.44772 3 5 3H14C14.5523 3 15 3.44772 15 4V5H16C17.1046 5 18 5.89543 18 7V19C18 20.1046 17.1046 21 16 21H5C4.44772 21 4 20.5523 4 20V4ZM6 5V19H16C16.5523 19 17 18.5523 17 18V7C17 6.44772 16.5523 6 16 6H15V4H6V5ZM6 5H14V4H6V5Z"
+    fill="#212529"/>
+  <!-- Link arrow overlay -->
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M13.5 9C13.2239 9 13 9.22386 13 9.5C13 9.77614 13.2239 10 13.5 10H14.793L11.1464 13.6464C10.9512 13.8417 10.9512 14.1583 11.1464 14.3536C11.3417 14.5488 11.6583 14.5488 11.8536 14.3536L15.5 10.707V12C15.5 12.2761 15.7239 12.5 16 12.5C16.2761 12.5 16.5 12.2761 16.5 12V9.5C16.5 9.22386 16.2761 9 16 9H13.5Z"
+    fill="#212529"/>
+  <!-- Horizontal lines (course content) -->
+  <path d="M7 9H11V10H7V9Z" fill="#212529"/>
+  <path d="M7 12H10V13H7V12Z" fill="#212529"/>
+  <path d="M7 15H12V16H7V15Z" fill="#212529"/>
+</svg>

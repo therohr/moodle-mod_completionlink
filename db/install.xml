@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/completionlink/db" VERSION="20260317" COMMENT="XMLDB file for mod_completionlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+  <TABLES>
+    <TABLE NAME="completionlink" COMMENT="Each instance of the completionlink activity module">
+      <FIELDS>
+        <FIELD NAME="id"                 TYPE="int"  LENGTH="10"  NOTNULL="true"  SEQUENCE="true"/>
+        <FIELD NAME="course"             TYPE="int"  LENGTH="10"  NOTNULL="true"  DEFAULT="0"
+               COMMENT="FK to mdl_course.id — the host course containing this activity"/>
+        <FIELD NAME="name"               TYPE="char" LENGTH="255" NOTNULL="true"
+               COMMENT="Activity name displayed in the course page"/>
+        <FIELD NAME="intro"              TYPE="text"              NOTNULL="false"
+               COMMENT="Activity intro text (standard Moodle intro field)"/>
+        <FIELD NAME="introformat"        TYPE="int"  LENGTH="4"   NOTNULL="true"  DEFAULT="0"/>
+        <FIELD NAME="targetcourseid"     TYPE="int"  LENGTH="10"  NOTNULL="true"  DEFAULT="0"
+               COMMENT="FK to mdl_course.id — the course whose completion is being tracked"/>
+        <FIELD NAME="completiontracking" TYPE="int"  LENGTH="1"   NOTNULL="true"  DEFAULT="1"
+               COMMENT="1 = require target course completion; 0 = display only"/>
+        <FIELD NAME="timecreated"        TYPE="int"  LENGTH="10"  NOTNULL="true"  DEFAULT="0"/>
+        <FIELD NAME="timemodified"       TYPE="int"  LENGTH="10"  NOTNULL="true"  DEFAULT="0"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary"            TYPE="primary"  FIELDS="id"/>
+        <KEY NAME="fk_course"          TYPE="foreign"  FIELDS="course"         REFTABLE="course" REFFIELDS="id"/>
+        <KEY NAME="fk_targetcourseid"  TYPE="foreign"  FIELDS="targetcourseid" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="targetcourseid" UNIQUE="false" FIELDS="targetcourseid"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

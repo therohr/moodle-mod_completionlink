@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="mod_completionlink">
+    <description>Moodle coding standard for mod_completionlink</description>
+
+    <!-- Use the Moodle standard -->
+    <rule ref="moodle"/>
+
+    <!-- Check all PHP files in this directory -->
+    <file>.</file>
+
+    <!-- Exclude third-party and generated directories -->
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- PHP files only -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Show progress and include warnings -->
+    <arg value="pw"/>
+
+    <!-- Colours in output -->
+    <arg name="colors"/>
+</ruleset>

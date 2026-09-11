@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# AMD sources and builds must stay LF on every OS: Moodle's eslint enforces LF, and
+# grunt embeds the source in the .min.js.map, so CRLF checkouts on Windows would
+# produce build files that CI reports as stale.
+amd/** text eol=lf
+
+# Keep development-only files out of release ZIPs built with `git archive`.
+.github/        export-ignore
+.gitattributes  export-ignore
+.gitignore      export-ignore
+phpcs.xml       export-ignore
