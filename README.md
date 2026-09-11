@@ -130,6 +130,13 @@ No site-wide admin settings are required. All configuration is per-activity:
 
 ---
 
+## Credits
+
+Developed by David Rohr with the help of AI coding tools. All code is reviewed, tested on live Moodle sites, and checked
+by Moodle Plugin CI.
+
+---
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
