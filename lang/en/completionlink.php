@@ -41,10 +41,7 @@ $string['notenrolled']                   = 'You are not enrolled in {$a}, so you
 $string['notenrolled_contact']           = 'Ask your teacher or site administrator to enrol you in this course.';
 $string['pluginadministration']          = 'Course completion link administration';
 $string['pluginname']                    = 'Course completion link';
-$string['privacy:metadata:core_completion'] =
-    'The Course completion link activity reads course completion records from the Moodle ' .
-    'core completion subsystem to determine whether a student has completed the ' .
-    'linked course. No personal data is stored by this plugin directly.';
+$string['privacy:metadata:core_completion'] = 'The Course completion link activity reads course completion records from the Moodle core completion subsystem to determine whether a student has completed the linked course. No personal data is stored by this plugin directly.';
 $string['targetcourseid']                = 'Target course';
 $string['targetcourseid_help']           = 'Select the course whose completion will be tracked and linked from this activity.
 
