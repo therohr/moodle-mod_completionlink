@@ -3,7 +3,7 @@
 A Moodle activity module that embeds a direct link to another course and automatically tracks whether the student has completed it. Completion of the linked course drives activity completion on the host course, enabling downstream restriction rules and learning-path gating without any manual grading or custom reports.
 
 **Author:** David Rohr — [tidewatercreative.com](https://tidewatercreative.com)
-**Requires:** Moodle 4.5–5.2
+**Requires:** Moodle 4.5–5.3
 **Maturity:** Stable
 **License:** GNU GPL v3 or later
 
@@ -80,8 +80,8 @@ Alternatively, extract the zip so that the `completionlink` folder sits at `{moo
 
 ### Requirements
 
-- Moodle 4.5 to 5.2. Automated tests run on 4.5, 5.1 and 5.2; 5.0 is inside the supported range but not in the test
-  matrix.
+- Moodle 4.5 to 5.3. Automated tests run on 4.5, 5.1, 5.2 and 5.3; 5.0 is inside the supported range but not in the
+  test matrix.
 - Moodle Workplace: the target-course search is tenant-aware. The predecessor `mod_courselink` runs on Moodle
   Workplace 5.0, but this plugin hasn't been tested on Workplace yet.
 - Course completion must be enabled site-wide: **Site administration → Advanced features → Enable completion tracking**
