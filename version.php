@@ -26,8 +26,8 @@ defined('MOODLE_INTERNAL') || die();
 
 // Minimum Moodle 4.5 — required for activity_custom_completion API and Workplace 5.0 compatibility.
 $plugin->component = 'mod_completionlink';
-$plugin->version   = 2026091105;
+$plugin->version   = 2026102200;
 $plugin->requires  = 2024100700; // Moodle 4.5.
-$plugin->supported = [405, 502];  // Moodle 4.5 to 5.2 (see .github/workflows/moodle-plugin-ci.yml).
+$plugin->supported = [405, 503];  // Moodle 4.5 to 5.3 (see .github/workflows/moodle-plugin-ci.yml).
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '1.1.3';
+$plugin->release   = '1.1.4';
