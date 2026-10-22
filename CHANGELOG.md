@@ -2,6 +2,17 @@
 
 All notable changes to mod_completionlink will be documented in this file.
 
+## [1.1.4] - 2026-10-22
+
+### Added
+- Moodle 5.3 support. The supported range is now Moodle 4.5 to 5.3, and the automated tests include 5.3.
+- Activity icon (`pix/icon.svg`), so the activity chooser and course page no longer show a generic icon.
+- GPL-3.0 `LICENSE` file at the repository root (#1).
+
+### Fixed
+- The `privacy:metadata:core_completion` language string is now a single plain assignment, as Moodle's string
+  tooling requires (#2). The text is unchanged.
+
 ## [1.1.3] - 2026-09-11
 
 ### Added
